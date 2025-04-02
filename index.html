@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack Clone</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 20%;
+            background: #2c2f33;
+            color: white;
+            padding: 20px;
+        }
+        .channels {
+            margin-top: 20px;
+        }
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: #7289da;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .chat {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .message-box {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            display: flex;
+        }
+        .message-box input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .message-box button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background: #7289da;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Slack Clone</h2>
+        <div class="channels">
+            <p># general</p>
+            <p># random</p>
+            <p># development</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header"># general</div>
+        <div class="chat">
+            <p><strong>User1:</strong> Hello!</p>
+            <p><strong>User2:</strong> Hi there!</p>
+        </div>
+        <div class="message-box">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
